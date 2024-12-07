@@ -69,3 +69,5 @@ urlpatterns += [
         name='profile',
     ),
 ]
+
+# urls for likes
