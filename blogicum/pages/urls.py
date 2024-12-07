@@ -1,10 +1,10 @@
-from django.contrib import admin
-from django.urls import path, include
+from django.urls import path
 
 from . import views
 
+app_name: str = 'pages'
 
-urlpatterns = [
-    path('about/', views.about, name='about'),
-    path('rules/', views.rules, name='rules'),
+urlpatterns: list = [
+    path('about/', views.AboutView.as_view(), name='about'),
+    path('rules/', views.RulesView.as_view(), name='rules'),
 ]
